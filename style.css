@@ -1,0 +1,267 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7f2;
+    color:#333;
+    line-height:1.8;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.overlay{
+    text-align:center;
+    color:white;
+    max-width:900px;
+    padding:20px;
+}
+
+.overlay h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.overlay p{
+    font-size:1.3rem;
+    margin-bottom:30px;
+}
+
+.botao{
+    background:#43a047;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.botao:hover{
+    background:#2e7d32;
+}
+
+nav{
+    background:#1b5e20;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav li{
+    margin:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#c8e6c9;
+}
+
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:35px;
+    color:#1b5e20;
+    font-size:2.2rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.estatisticas{
+    background:#2e7d32;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+.contador{
+    padding:20px;
+}
+
+.contador h3{
+    font-size:3.5rem;
+}
+
+.timeline{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.evento{
+    background:#4caf50;
+    color:white;
+    padding:20px;
+    border-radius:12px;
+    font-weight:600;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+#beneficios ul{
+    max-width:700px;
+    margin:auto;
+}
+
+#beneficios li{
+    margin-bottom:15px;
+    background:white;
+    padding:15px;
+    border-left:5px solid #43a047;
+    border-radius:8px;
+}
+
+#grafico{
+    background:white;
+}
+
+canvas{
+    max-width:900px;
+    margin:auto;
+    display:block;
+}
+
+#curiosidade{
+    background:#e8f5e9;
+    text-align:center;
+}
+
+#textoCuriosidade{
+    font-size:1.2rem;
+    font-weight:600;
+}
+
+#quiz{
+    text-align:center;
+}
+
+#quiz button{
+    padding:12px 25px;
+    margin:10px;
+    border:none;
+    border-radius:8px;
+    background:#43a047;
+    color:white;
+    cursor:pointer;
+    font-size:1rem;
+    transition:0.3s;
+}
+
+#quiz button:hover{
+    background:#2e7d32;
+}
+
+#resultado{
+    margin-top:20px;
+}
+
+#faq{
+    background:#f1f8e9;
+}
+
+.faq-item{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.faq-item h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+#fontes ul{
+    max-width:800px;
+    margin:auto;
+}
+
+#fontes li{
+    margin-bottom:12px;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+footer h2{
+    margin-bottom:15px;
+}
+
+@media(max-width:768px){
+
+    .overlay h1{
+        font-size:2.5rem;
+    }
+
+    .overlay p{
+        font-size:1rem;
+    }
+
+    section{
+        padding:60px 5%;
+    }
+
+    .estatisticas{
+        flex-direction:column;
+    }
+
+}
